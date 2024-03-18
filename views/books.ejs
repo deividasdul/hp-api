@@ -1,0 +1,15 @@
+<%- include("./partials/header.ejs") %>
+    
+    <h1 id="title"><%=pageTitle%></h1>
+  </header>
+
+  <main class="main-section">
+    <%for (var i = 0; i < 7; i++) {%>
+      <div class="book-card">
+        <h2><%=books[i].attributes%></h2>
+      </div>
+    <%}%>
+  </main>
+</body>
+
+<%- include("./partials/footer.ejs") %>
